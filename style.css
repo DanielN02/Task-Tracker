@@ -1,0 +1,165 @@
+html,
+body {
+  background: lavender;
+  font-family: "Alkalami", serif;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+/* Styling the input box */
+#task-input {
+  padding: 20px;
+  margin: 50px;
+  width: 325px;
+  border-radius: 10px;
+}
+
+/* Styling the submit button */
+#task-submit {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-style: solid;
+}
+
+#task-submit:hover {
+  background-color: lavender;
+  transition: 0.7s;
+}
+
+h2 {
+  margin-left: 300px;
+  font-size: 30px;
+}
+
+/* Styling the edit and save button */
+.content,
+.actions {
+  margin-left: 300px;
+  font-size: 30px;
+}
+
+/* Styling the task box and the rest of the section */
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkslateblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 1000px;
+  margin-left: 200px;
+}
+
+.task .content .text {
+  color: var(--light);
+  font-size: 1.75rem;
+  margin-left: -200px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.task-list .actions {
+  font-size: 1.75rem;
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions .edit {
+  border-radius: 10px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.task .actions .delete {
+  color: crimson;
+  background-color: lavender;
+  border-radius: 10px;
+}
+
+/* Adding responsiveness to the page */
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    margin-left: 30px;
+    font-size: 30px;
+  }
+
+  #task-input {
+    padding: 20px;
+    margin: 50px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  #task-submit {
+    padding: 10px;
+    margin-left: 60px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: white;
+    border-style: solid;
+  }
+
+  #tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslateblue;
+    padding: rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 280px;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .task .content .text {
+    color: var(--light);
+    margin-left: -300px;
+    border-radius: 10px;
+    width: 225px;
+  }
+
+  .task-list .actions {
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+  }
+
+  .task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+}
